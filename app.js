@@ -16,7 +16,14 @@ app.get("/songs", function(req, res) {
         {title: "I Like It", artist: "Cardi B"}
     ];
      res.render("songs.ejs", {songs: songs})
-  });
+});
+
+app.get("/getname/:name", function(req, res) {
+    const name = req.params.name;
+    res.render("name.ejs", {getName: name})
+    console.log(req)
+});
+
 
 
 app.listen(3000, function() {
