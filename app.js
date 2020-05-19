@@ -5,7 +5,7 @@ app.use("/", express.static("Public"));
 
 
 app.get("/", function(req, res) {
-    res.render("homepage.ejs")
+    res.render("homepage")
 });
 
 app.get("/songs", function(req, res) {
@@ -16,12 +16,12 @@ app.get("/songs", function(req, res) {
         {title: "Dance Monkey", artist: "Tones and I"},
         {title: "I Like It", artist: "Cardi B"}
     ];
-     res.render("songs.ejs", {songs: songs})
+     res.render("songs", {songs: songs})
 });
 
 app.get("/getname/:name", function(req, res) {
     const name = req.params.name;
-    res.render("name.ejs", {getName: name})
+    res.render("name", {getName: name})
     console.log(req)
 });
 

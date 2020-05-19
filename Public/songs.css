@@ -1,9 +1,10 @@
 body {
-    color: rgb(170, 152, 155);
+    color: black;
     background-color: rgb(206, 229, 235);
     text-align: center;
 }
 
 h1 {
     text-align: center;
+    color: rgb(170, 152, 155);
 }
