@@ -1,5 +1,12 @@
+<style>
+    body {
+        color: pink;
+    }
+</style>
+
 <h1>Songs</h1>
 
     <% for(var i = 0; i < songs.length; i++){%>
-        <li><%= songs[i].title %><li>
+        <li>Song title: <%= songs[i].title %></li>
+        <li>Sung by: <%= songs[i].artist %></li>
     <%} %>

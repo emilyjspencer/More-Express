@@ -4,7 +4,7 @@ app.set('view engine', 'ejs');
 
 
 app.get("/", function(req, res) {
-    res.send("Testing, testing, 123")
+    res.render("homepage.ejs")
 });
 
 app.get("/songs", function(req, res) {
