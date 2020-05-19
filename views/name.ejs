@@ -1,16 +1,21 @@
+<!DOCTYPE html>
+    <html>
+        <head>
+          <link rel="stylesheet" type="text/css" href="name.css">
+          <title>Name</title>
+        </head>
+        <body>
+            <h1>Hello <%= getName.charAt(0).toUpperCase() + getName.slice(1) %> How are you today?</h1>
 
-<style>
-    body {
-        color: pink;
-    }
-</style>
+
+            <% if(getName.toLowerCase() === "emily"){ %>
+                <p>Yes - lowercase!!!</p>
+            <% } else { %>
+                <p>Why not lowercase???</p>
+            <%  } %>
+
+        </body>
+    </html>
 
 
-<h1>Hello <%= getName.charAt(0).toUpperCase() + getName.slice(1) %> How are you today?</h1>
 
-
-<% if(getName.toLowerCase() === "emily"){ %>
-    <p>Yes - lowercase!!!</p>
-<% } else { %>
-    <p>Why not lowercase???</p>
-<%  } %>
